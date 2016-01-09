@@ -48,9 +48,10 @@ header {
 				background-color: rgba(0, 0, 0, 0.4);
 			}
 
-			i.mdi-open-in-new {
-				font-size: 11px;
-				vertical-align: super;
+			i {
+				font-size: 17px;
+				margin: 0 4px 0 -4px;
+				vertical-align: top;
 			}
 		}
 	}
@@ -71,16 +72,55 @@ header {
 	}
 }
 
-.introduction {
+.page-home {
 	padding-top: 20px;
 	padding-bottom: 20px;
 
 	img {
 		@include border-radius(2px);
 	}
+
+	.open-source {
+		background-color: $light-gray;
+
+		p {
+			text-align: center;
+		}
+	}
+
+	.support {
+		background-color: $primary-color;
+
+		p {
+			text-align: left;
+		}
+	}
+
+	.support, .open-source {
+		color: #fff;
+
+		h2 {
+			margin-top: 5px;
+			margin-bottom: 0;
+			font-size: 24px;
+			font-weight: 400;
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+		h3 {
+			font-size: 20px;
+			margin-top: 0;
+		}
+		p {
+			color: rgba(255, 255, 255, 0.8);
+			font-weight: 400;
+		}
+	}
 }
 
 footer {
+	padding-bottom: 20px;
+
 	h3 {
 		font-size: 19px;
 		font-weight: normal;

@@ -2,36 +2,112 @@
 layout: default
 ---
 
-<div class="home">
-	<div class="introduction">
-		<div class="row">
-			<div class="col-md-3">
-				<img src="{{ "/assets/img/screenshot.png" | prepend: site.baseurl }}" alt="Munin" />
-			</div>
-			<div class="col-md-8">
-				<h2>What is Munin?</h2>
-				<p>Munin is a networked resource monitoring tool that can help analyze resource trends and "what just happened
-					to kill our performance?" problems. It is designed to be very plug and play. A default installation provides
-					a lot of graphs with almost no work.</p>
-				<p>In Norse mythology Hugin and Munin are the ravens of the god king Odin. They flew all over Midgard for him,
-					seeing and remembering, and later telling him. "Munin" means "memory".</p>
+<div class="page-home">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="{{ "/assets/img/screenshot.png" | prepend: site.baseurl }}" alt="Munin" />
+		</div>
+		<div class="col-md-8">
+			<h2>What is Munin?</h2>
+			<p>Munin is a networked resource monitoring tool that can help analyze resource trends and "what just happened
+				to kill our performance?" problems. It is designed to be very plug and play. A default installation provides
+				a lot of graphs with almost no work.</p>
+			<p>In Norse mythology Hugin and Munin are the ravens of the god king Odin. They flew all over Midgard for him,
+				seeing and remembering, and later telling him. "Munin" means "memory".</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>How does it work?</h2>
+			<p>Munin the monitoring tool surveys all your computers and remembers what it saw. It presents all the
+				information in graphs through a web interface. Its emphasis is on plug and play capabilities. After
+				completing a installation a high number of monitoring plugins will be playing with no more effort.</p>
+
+			<p>Using Munin you can easily monitor the performance of your computers, networks, SANs, applications,
+				weather measurements and whatever comes to mind. It makes it easy to determine "what's different today"
+				when a performance problem crops up. It makes it easy to see how you're doing capacity-wise on any resources.</p>
+
+			<p>Munin uses the excellent <a href="http://oss.oetiker.ch/rrdtool/" target="_blank">​RRDTool</a> (written
+				by Tobi Oetiker) and the framework is written in Perl, while plugins may be written in any language.
+				Munin has a master/node architecture in which the master connects to all the nodes at regular intervals
+				and asks them for data. It then stores the data in RRD files, and (if needed) updates the graphs. One of
+				the main goals has been ease of creating new plugins (graphs).</p>
+
+			<h3>Plugins</h3>
+			<p>Plugins are small, standalone executables. They are easy to write, and can be written in any language.
+				You can find many user contributed plugins in ​the
+				<a href="https://github.com/munin-monitoring/contrib/" target="_blank">contrib</a> repository.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-9 col-sm-offset-3">
+			<div class="row support half-row half-row-right">
+				<div class="col-sm-3">
+					<h2>Support</h2>
+				</div>
+				<div class="col-sm-4">
+					<h3>I need help</h3>
+					<p>I'm experiencing issues installing, configuring or using munin</p>
+					<a href="#" class="button"><i class="mdi mdi-comment-alert"></i> Join us on IRC</a>
+				</div>
+				<div class="col-sm-4">
+					<h3>I found a bug</h3>
+					<p>I discovered an issue affecting munin</p>
+					<a href="https://github.com/munin-monitoring/munin/issues" target="_blank" class="button"><i class="mdi mdi-alert-circle"></i> Open an issue on GitHub</a>
+					<a href="https://github.com/munin-monitoring/munin/pulls" target="_blank" class="button"><i class="mdi mdi-source-pull"></i> Create a pull request on GitHub</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<h1 class="page-heading">Posts</h1>
+	<div class="row">
+		<div class="col-sm-9 col-sm-offset-3">
+			<div class="row open-source half-row half-row-right buttons-set buttons-set-inverse buttons-set-small">
+				<div class="col-sm-4 col-xs-12">
+					<h2>Munin is open-source</h2>
+					<p>Help us making it better!</p>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<a href="https://github.com/munin-monitoring/munin" target="_blank" class="button">
+						<i class="mdi mdi-code-braces"></i>
+						<p>Browse source</p>
+					</a>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<a href="https://github.com/munin-monitoring/munin/pulls" target="_blank" class="button">
+						<i class="mdi mdi-source-pull"></i>
+						<p>Pull requests</p>
+					</a>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<a href="https://github.com/munin-monitoring/munin/issues" target="_blank" class="button">
+						<i class="mdi mdi-alert-circle"></i>
+						<p>Issues</p>
+					</a>
+				</div>
+				<div class="col-sm-2 col-xs-6">
+					<a href="https://github.com/munin-monitoring/munin/commits/devel" target="_blank" class="button">
+						<i class="mdi mdi-git"></i>
+						<p>Last commits</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<h1>Posts</h1>
 
-	<ul class="post-list">
-		{% for post in site.posts %}
-			<li>
-				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<ul class="post-list">
+			{% for post in site.posts %}
+				<li>
+					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-				<h2>
-					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-			</li>
-		{% endfor %}
-	</ul>
+					<h2>
+						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h2>
+				</li>
+			{% endfor %}
+		</ul>
 
-	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+		<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	</div>
 </div>
