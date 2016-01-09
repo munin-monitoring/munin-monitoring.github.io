@@ -3,21 +3,35 @@ layout: default
 ---
 
 <div class="home">
+	<div class="introduction">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="{{ "/assets/img/screenshot.png" | prepend: site.baseurl }}" alt="Munin" />
+			</div>
+			<div class="col-md-8">
+				<h2>What is Munin?</h2>
+				<p>Munin is a networked resource monitoring tool that can help analyze resource trends and "what just happened
+					to kill our performance?" problems. It is designed to be very plug and play. A default installation provides
+					a lot of graphs with almost no work.</p>
+				<p>In Norse mythology Hugin and Munin are the ravens of the god king Odin. They flew all over Midgard for him,
+					seeing and remembering, and later telling him. "Munin" means "memory".</p>
+			</div>
+		</div>
+	</div>
+	<h1 class="page-heading">Posts</h1>
 
-  <h1 class="page-heading">Posts</h1>
+	<ul class="post-list">
+		{% for post in site.posts %}
+			<li>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<h2>
+					<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+			</li>
+		{% endfor %}
+	</ul>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
