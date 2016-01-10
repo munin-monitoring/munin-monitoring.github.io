@@ -62,6 +62,10 @@ header {
 		h1.logo-wrap {
 			float: none;
 			margin: 10px 0;
+
+			a {
+				@include opacity(1);
+			}
 		}
 
 		.menu {

@@ -14,6 +14,8 @@ layout: default
 				a lot of graphs with almost no work.</p>
 			<p>In Norse mythology Hugin and Munin are the ravens of the god king Odin. They flew all over Midgard for him,
 				seeing and remembering, and later telling him. "Munin" means "memory".</p>
+
+			<a href="http://demo.munin-monitoring.org" class="button button-elevated"><i class="mdi mdi-play"></i> Check the demo server</a>
 		</div>
 	</div>
 	<div class="row">
@@ -37,23 +39,18 @@ layout: default
 			<p>Plugins are small, standalone executables. They are easy to write, and can be written in any language.
 				You can find many user contributed plugins in ​the
 				<a href="https://github.com/munin-monitoring/contrib/">contrib</a> repository.</p>
-		</div>
-	</div>
-	<div class="row">
-		<h1>Posts</h1>
 
-		<ul class="post-list">
-			{% for post in site.posts %}
+			<h2>Last news</h2>
+			<ul class="post-list">
+				{% for post in site.posts %}
 				<li>
 					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-					<h2>
-						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-					</h2>
+					<h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 				</li>
-			{% endfor %}
-		</ul>
-
-		<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+				{% endfor %}
+			</ul>
+			<a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button pull-right"><i class="mdi mdi-rss-box"></i> Subscribe using RSS</a>
+		</div>
 	</div>
 </div>

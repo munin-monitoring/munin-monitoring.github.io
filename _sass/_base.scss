@@ -19,32 +19,55 @@
 	}
 }
 
+
 .button {
 	color: inherit;
 	display: inline-block;
 	text-transform: uppercase;
-	padding: 6px 10px;
-	@include border-radius(2px);
 	font-size: 12px;
 	font-weight: 500;
+	padding: 6px 12px;
 	@extend .hoverable;
-
-	i {
-		margin: 0 3px 0 -3px;
-		font-size: 16px;
-		vertical-align: bottom;
-	}
+	@include transition-duration(200ms);
+	@include border-radius(2px);
 
 	&:hover {
 		color: inherit;
+		text-decoration: none;
+	}
+	&:focus, &:active {
+		outline: none;
+		@include box-shadow(inset 0 1px 0 0 rgba(0,0,0,0.2));
 	}
 
+	&.button-elevated {
+		color: #fff;
+		border: 1px solid darken($primary-color, 3);
+		background: $primary-color;
+		@include box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.1), inset 0 0 0 0 rgba(0,0,0,0.2));
+
+		&:hover {
+			background: darken($primary-color, 2);
+			@include box-shadow(0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 0 rgba(0,0,0,0.2));
+		}
+		&:focus, &:active {
+			background: darken($primary-color, 5);
+			color: #fff;
+			@include box-shadow(inset 0 1px 0 0 rgba(0, 0, 0, 0.2));
+		}
+	}
 	&.inverse {
 		color: #fff;
 	}
 	&.button-break {
 		float: left;
 		clear: left;
+	}
+
+	i {
+		margin: 0 3px 0 -3px;
+		font-size: 20px;
+		vertical-align: bottom;
 	}
 }
 

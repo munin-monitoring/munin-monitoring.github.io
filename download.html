@@ -88,7 +88,7 @@ layout: default
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h5>On each node</h5>
+					<h5>On the master</h5>
 					<p>Add the previously configured nodes to the master configuration file:</p>
 
 					<div class="conf-file">
@@ -118,9 +118,17 @@ layout: default
 					<p>The master service does not need to be reloaded: its configuration file will be read on the next poll.</p>
 				</div>
 			</div>
-
 			<br />
-			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin" class="button pull-right">Read more on Munin Guide</a>
+			<p>Now that munin is up and running, you can view report pages by accessing the master's <code>munin-httpd</code>
+				service on port 4948 in your browser. You may have to wait up to 5 minutes until nodes gets polled and
+				data goes live on the report pages.</p>
+
+			<p>If anything goes wrong, please head to the <a href="/support.html">support page</a> and check the FAQ: changes are that you will find
+				a solution for your issues here.</p>
+
+			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin" class="button pull-right">
+				<i class="mdi mdi-book-open-variant"></i> Read more on Munin Guide
+			</a>
 			<br />
 
 			<h3><i class="mdi mdi-code-tags"></i> From source</h3>
@@ -129,7 +137,9 @@ layout: default
 				want to contribute to the development of Munin, and then you should use a development install.</p>
 
 			<br />
-			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin" class="button pull-right">Read more on Munin Guide</a>
+			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin-from-source" class="button pull-right">
+				<i class="mdi mdi-book-open-variant"></i> Read more on Munin Guide
+			</a>
 			<br />
 		</div>
 	</div>
