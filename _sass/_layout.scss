@@ -57,6 +57,17 @@ header {
 	}
 }
 
+
+// Set content overlapping header
+@media (min-width: 768px) {
+	header {
+		padding-bottom: $content-offset;
+	}
+	.content, .aside-content {
+		margin-top: -$content-offset;
+	}
+}
+
 .content {
 	margin-top: -$content-offset;
 	background-color: #fff;
@@ -72,32 +83,20 @@ header {
 	}
 }
 
-.page-home {
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-	img {
+.aside-content {
+	.aside-content-part {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 5px 10px;
+		@extend .elevation-low;
 		@include border-radius(2px);
-	}
-
-	.open-source {
-		background-color: $light-gray;
-
-		p {
-			text-align: center;
-		}
-	}
-
-	.support {
-		background-color: $primary-color;
-
-		p {
-			text-align: left;
-		}
-	}
-
-	.support, .open-source {
 		color: #fff;
+		text-align: center;
+
+		&:first-child {
+			margin-top: 0;
+		}
 
 		h2 {
 			margin-top: 5px;
@@ -109,12 +108,46 @@ header {
 		}
 		h3 {
 			font-size: 20px;
-			margin-top: 0;
+			margin-top: 10px;
+			margin-bottom: 0;
 		}
 		p {
 			color: rgba(255, 255, 255, 0.8);
 			font-weight: 400;
 		}
+	}
+
+	.download {
+		background-color: $cyan-dark;
+
+		h2 {
+			margin-bottom: 10px;
+		}
+	}
+
+	.open-source {
+		background-color: $gray;
+	}
+
+	.support {
+		background-color: $primary-color;
+		text-align: left;
+
+		p { margin-bottom: 5px; }
+	}
+}
+@media (max-width: 767px) {
+	.aside-content {
+		margin-top: 20px;
+	}
+}
+
+.page-home {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	img {
+		@include border-radius(2px);
 	}
 }
 

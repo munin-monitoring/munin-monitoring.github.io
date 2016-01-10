@@ -35,6 +35,10 @@
 	&.inverse {
 		color: #fff;
 	}
+	&.button-break {
+		float: left;
+		clear: left;
+	}
 }
 
 .buttons-set {
