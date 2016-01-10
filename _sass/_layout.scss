@@ -54,6 +54,25 @@ header {
 				vertical-align: top;
 			}
 		}
+
+		@extend .clear-after;
+	}
+
+	@media (max-width: 480px) {
+		h1.logo-wrap {
+			float: none;
+			margin: 10px 0;
+		}
+
+		.menu {
+			margin: 10px 0;
+			text-align: left;
+
+			a {
+				float: left;
+				clear: left;
+			}
+		}
 	}
 }
 
