@@ -5,7 +5,7 @@ layout: default
 <div class="page-home">
 	<div class="row">
 		<div class="col-md-5">
-			<img src="{{ "/assets/img/screenshot.png" | prepend: site.baseurl }}" alt="Munin" />
+			<img src="/assets/img/screenshot.png" alt="Munin" />
 		</div>
 		<div class="col-md-6">
 			<h2>What is Munin?</h2>
@@ -46,11 +46,11 @@ layout: default
 				<li>
 					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-					<h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+					<h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
 				</li>
 				{% endfor %}
 			</ul>
-			<a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="button pull-right"><i class="mdi mdi-rss-box"></i> Subscribe using RSS</a>
+			<a href="/feed.xml" class="button pull-right"><i class="mdi mdi-rss-box"></i> Subscribe using RSS</a>
 		</div>
 	</div>
 </div>
