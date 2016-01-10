@@ -4,10 +4,10 @@ layout: default
 
 <div class="page-home">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-md-5">
 			<img src="{{ "/assets/img/screenshot.png" | prepend: site.baseurl }}" alt="Munin" />
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-6">
 			<h2>What is Munin?</h2>
 			<p>Munin is a networked resource monitoring tool that can help analyze resource trends and "what just happened
 				to kill our performance?" problems. It is designed to be very plug and play. A default installation provides
@@ -27,7 +27,7 @@ layout: default
 				weather measurements and whatever comes to mind. It makes it easy to determine "what's different today"
 				when a performance problem crops up. It makes it easy to see how you're doing capacity-wise on any resources.</p>
 
-			<p>Munin uses the excellent <a href="http://oss.oetiker.ch/rrdtool/" target="_blank">​RRDTool</a> (written
+			<p>Munin uses the excellent <a href="http://oss.oetiker.ch/rrdtool/">​RRDTool</a> (written
 				by Tobi Oetiker) and the framework is written in Perl, while plugins may be written in any language.
 				Munin has a master/node architecture in which the master connects to all the nodes at regular intervals
 				and asks them for data. It then stores the data in RRD files, and (if needed) updates the graphs. One of
@@ -36,7 +36,7 @@ layout: default
 			<h3>Plugins</h3>
 			<p>Plugins are small, standalone executables. They are easy to write, and can be written in any language.
 				You can find many user contributed plugins in ​the
-				<a href="https://github.com/munin-monitoring/contrib/" target="_blank">contrib</a> repository.</p>
+				<a href="https://github.com/munin-monitoring/contrib/">contrib</a> repository.</p>
 		</div>
 	</div>
 	<div class="row">

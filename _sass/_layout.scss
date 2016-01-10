@@ -70,27 +70,42 @@ header {
 
 .content {
 	margin-top: -$content-offset;
+	padding-bottom: 10px;
 	background-color: #fff;
 	@extend .elevation-middle;
 	@include border-radius(2px);
 
+	h2 {
+		margin-top: 10px;
+		font-weight: normal;
+		color: #444;
+	}
+	h3 {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+	}
+	h4 {
+		font-size: 18px;
+		margin-top: 20px;
+	}
 	p {
 		text-align: justify;
 	}
-
 	img {
 		max-width: 100%;
+	}
+	.subtitle {
+		color: #555;
+		font-size: 13px;
+		margin-top: -5px;
 	}
 }
 
 .aside-content {
 	.aside-content-part {
-		display: block;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		padding: 5px 10px;
+		@extend .card;
 		@extend .elevation-low;
-		@include border-radius(2px);
 		color: #fff;
 		text-align: center;
 
@@ -100,7 +115,7 @@ header {
 
 		h2 {
 			margin-top: 5px;
-			margin-bottom: 0;
+			margin-bottom: 10px;
 			font-size: 24px;
 			font-weight: 400;
 			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -118,22 +133,38 @@ header {
 	}
 
 	.download {
-		background-color: $cyan-dark;
+		background-color: $blue;
+		@extend .hoverable;
 
-		h2 {
-			margin-bottom: 10px;
+		&:hover {
+			background-color: darken($blue, 3);
+		}
+	}
+
+	.munin-guide {
+		background-color: $dark-gray;
+		@extend .hoverable;
+
+		&:hover {
+			background-color: darken($dark-gray, 2);
 		}
 	}
 
 	.open-source {
 		background-color: $gray;
+
+		h2 {
+			margin-bottom: 0;
+		}
 	}
 
 	.support {
 		background-color: $primary-color;
-		text-align: left;
+		@extend .hoverable;
 
-		p { margin-bottom: 5px; }
+		&:hover {
+			background-color: darken($primary-color, 2);
+		}
 	}
 }
 @media (max-width: 767px) {
@@ -143,12 +174,20 @@ header {
 }
 
 .page-home {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
 
 	img {
 		@include border-radius(2px);
 	}
+}
+
+.page-support {
+	.help-means {
+		background-color: $light-gray;
+	}
+}
+
+.page-download {
 }
 
 footer {
