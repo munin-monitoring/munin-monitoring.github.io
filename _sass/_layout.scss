@@ -265,8 +265,6 @@ header {
 		}
 
 		.part {
-			margin-bottom: 30px;
-
 			h3 {
 				font-family: $secondary-font;
 				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -297,6 +295,8 @@ header {
 			&:hover i {
 				background-color: rgba(255, 255, 255, 0.15);
 			}
+
+			@extend .clear-after;
 		}
 
 		.screenshot {
@@ -312,12 +312,32 @@ header {
 			@include transition-duration(500ms);
 
 			.button {
-				margin-top: 160px;
+				margin-top: 170px;
+				@include transition-duration(500ms);
 			}
 
 			&:hover {
-				margin-top: -50px;
-				height: 200px;
+				margin-top: -75px;
+				height: 225px;
+
+				.button {
+					margin-top: 140px;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.button {
+					margin-top: 90px;
+				}
+
+				&:hover {
+					margin-top: 0;
+					height: 150px;
+
+					.button {
+						margin-top: 90px;
+					}
+				}
 			}
 		}
 	}
