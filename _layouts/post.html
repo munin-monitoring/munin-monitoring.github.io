@@ -1,13 +1,22 @@
 ---
 layout: default
 ---
-<div class="post">
-	<div class="post-header">
-		<h1 class="post-title">{{ page.title }}</h1>
-		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-	</div>
+<div class="page page-post page-padding-high">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="post-header">
+				<h2 class="post-title">{{ page.title }}</h2>
+				<p class="post-meta">Posted on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
-	<article class="post-content">
-		{{ content }}
-	</article>
+				<hr />
+			</div>
+
+			<article class="post-content">
+				{{ content }}
+			</article>
+
+			<br />
+			<a href="/news.html" class="button pull-right"><i class="mdi mdi-newspaper"></i> All news</a>
+		</div>
+	</div>
 </div>

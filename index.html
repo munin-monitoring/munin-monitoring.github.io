@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="page-home">
+<div class="page page-home page-manual-padding">
 	<div class="row">
 		<div class="col-md-5">
 			<img src="/assets/img/screenshot.png" alt="Munin" />
@@ -60,17 +60,17 @@ layout: default
 					<div class="part">
 						<i class="mdi mdi-check-all"></i>
 						<h3>Maintained</h3>
-						<p>Munin's first version was released in October 2002 and keeps evolving since.</p>
+						<p>Munin's first version was released ten years ago and it keeps evolving since</p>
 					</div>
 				</div>
-				<div class="col-xs-8 col-xs-offset-2 screenshot">
+				<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 screenshot">
 					<a href="/download.html" class="button button-elevated"><i class="mdi mdi-package-down"></i> Download munin</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-10 col-md-offset-1">
 			<h2>How does it work?</h2>
 
 			<p>Munin the monitoring tool surveys all your computers and remembers what it saw. It presents all the
@@ -89,21 +89,31 @@ layout: default
 
 			<h3>Plugins</h3>
 			<p>Plugins are small, standalone executables. They are easy to write, and can be written in any language.
-				You can find many user contributed plugins in ​the
-				<a href="https://github.com/munin-monitoring/contrib/">contrib</a> repository.</p>
+				You can find many user contributed plugins in ​the <a href="https://github.com/munin-monitoring/contrib/">contrib</a> repository
+				or <a href="http://guide.munin-monitoring.org/en/latest/plugin/index.html">easily write your own ones.</a></p>
 
-			<h2>Last news</h2>
-			<ul class="post-list">
+			<br />
+			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin" class="button pull-right">
+				<i class="mdi mdi-book-open-variant"></i> Read more on Munin Guide
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1 last-news">
+			<h2><i class="mdi mdi-newspaper"></i> Last news</h2>
+
+			<ul class="post-list list">
 				{% for post in site.posts limit:6 %}
 				<li>
-					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-					<h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+					<a href="{{ post.url }}">
+						<h3>{{ post.title }}</h3>
+						<p class="post-meta">Posted on {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} in {{ post.meta }}{% endif %}</p>
+					</a>
 				</li>
 				{% endfor %}
 			</ul>
 			<a href="/feed.xml" class="button pull-right"><i class="mdi mdi-rss-box"></i> Subscribe using RSS</a>
-			<a href="/news.html" class="button pull-right"><i class="mdi mdi-newspaper"></i> Read more&hellip;</a>
+			<a href="/news.html" class="button pull-right"><i class="mdi mdi-newspaper"></i> More news&hellip;</a>
 		</div>
 	</div>
 </div>
