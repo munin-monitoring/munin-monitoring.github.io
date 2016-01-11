@@ -5,14 +5,19 @@
 
 
 // Define vars
+// Colors
 $primary-color:     #097D03;
-$primary-font:      Roboto, sans-serif;
 $gray:              #607D8B;
 $cyan-dark:         #006064;
 $blue:              #1565C0;
+$light-blue:        #0B9FDD;
 $light-gray:        #ECEFF1;
 $dark-gray:         #343131;
 $red:               #d84315;
+
+// Fonts
+$primary-font:      Roboto, sans-serif;
+$secondary-font:    "Roboto Slab", $primary-font;
 
 
 /* SASS mixins */
@@ -80,6 +85,12 @@ $red:               #d84315;
 	-moz-flex-direction: $value;
 	-ms-flex-direction: $value;
 	flex-direction: $value;
+}
+@mixin background-size($param) {
+	-webkit-background-size: $param;
+	-moz-background-size: $param;
+	-o-background-size: $param;
+	background-size: $param;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

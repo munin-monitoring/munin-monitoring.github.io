@@ -18,9 +18,61 @@ layout: default
 			<a href="http://demo.munin-monitoring.org" class="button button-elevated"><i class="mdi mdi-play"></i> Check the demo server</a>
 		</div>
 	</div>
+	<div class="row four-parts-part">
+		<div class="col-md-12">
+			<h2>Monitoring within easy reach</h2>
+			<p class="subtitle">Complicated does not mean efficient ; easy isn't superficial.<br />
+				Easily install munin and start supervising your servers right now!</p>
+
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1">
+					<div class="part">
+						<i class="mdi mdi-thumb-up"></i>
+						<h3>Easy to install</h3>
+						<p><a href="/download.html">Follow the instructions</a> and install & configure munin in less
+							than 10 minutes</p>
+					</div>
+					<div class="part">
+						<i class="mdi mdi-clock-fast"></i>
+						<h3>Real-time alerts</h3>
+						<p>Munin polls your servers once every 5 minutes. Don't wait longer to be notified when something
+							goes wrong</p>
+					</div>
+					<div class="part">
+						<i class="mdi mdi-arrow-expand"></i>
+						<h3>Scalable</h3>
+						<p>Monitor all-scales installations, from your home Raspberry Pi to a 100+ nodes cluster</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="part">
+						<i class="mdi mdi-auto-fix"></i>
+						<h3>Flexible</h3>
+						<p>Munin will cleverly choose from 500+ available plugins to monitor every service running on
+							your server</p>
+					</div>
+					<div class="part">
+						<i class="mdi mdi-beaker"></i>
+						<h3>Extensible</h3>
+						<p><a href="http://guide.munin-monitoring.org/en/latest/plugin/index.html">Write your own plugins</a>
+							in the language of your choice to supervise whatever you want</p>
+					</div>
+					<div class="part">
+						<i class="mdi mdi-check-all"></i>
+						<h3>Maintained</h3>
+						<p>Munin's first version was released in October 2002 and keeps evolving since.</p>
+					</div>
+				</div>
+				<div class="col-xs-8 col-xs-offset-2 screenshot">
+					<a href="/download.html" class="button button-elevated"><i class="mdi mdi-package-down"></i> Download munin</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<h2>How does it work?</h2>
+
 			<p>Munin the monitoring tool surveys all your computers and remembers what it saw. It presents all the
 				information in graphs through a web interface. Its emphasis is on plug and play capabilities. After
 				completing a installation a high number of monitoring plugins will be playing with no more effort.</p>
@@ -42,7 +94,7 @@ layout: default
 
 			<h2>Last news</h2>
 			<ul class="post-list">
-				{% for post in site.posts %}
+				{% for post in site.posts limit:6 %}
 				<li>
 					<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -51,6 +103,7 @@ layout: default
 				{% endfor %}
 			</ul>
 			<a href="/feed.xml" class="button pull-right"><i class="mdi mdi-rss-box"></i> Subscribe using RSS</a>
+			<a href="/news.html" class="button pull-right"><i class="mdi mdi-newspaper"></i> Read more&hellip;</a>
 		</div>
 	</div>
 </div>
