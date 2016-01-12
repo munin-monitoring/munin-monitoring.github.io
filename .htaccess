@@ -1,1 +1,3 @@
 # Rewrite rules are defined here
+Redirect 301 /wiki/MuninCompetition /munin-competition/
+Redirect 301 /wiki/CommercialOfferings /commercial-offerings/
