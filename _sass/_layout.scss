@@ -3,7 +3,8 @@ body {
 	font-family: $primary-font;
 }
 
-h1, h2, h3, h4, h5, h6 {
+// Anchors
+h2, h3, h4, h5, h6 {
 	.anchor {
 		@include opacity(0);
 		@include transition-duration(150ms);
@@ -413,7 +414,7 @@ header {
 	.post-header {
 		margin-bottom: 30px;
 
-		h2 {
+		h1 {
 			font-family: $secondary-font;
 			margin-bottom: 0;
 		}

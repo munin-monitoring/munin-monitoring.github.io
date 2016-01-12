@@ -3,7 +3,7 @@
  */
 $(document).ready(function() {
 	// Anchors
-	var titles = $('.content').find('h1, h2, h3, h4, h5, h6');
+	var titles = $('.content').find('h2, h3, h4, h5, h6');
 
 	// Create anchors for titles that hasn't one yet
 	// (markdown pages titles already has)
@@ -22,7 +22,7 @@ $(document).ready(function() {
 	});
 
 	// Add anchor next to them
-	titles.each(function() {
+	titles.not('.no-anchor').each(function() {
 		$('<a />')
 			.addClass('anchor')
 			.attr('href', '#' + $(this).attr('id'))

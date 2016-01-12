@@ -99,7 +99,7 @@ permalink: /
 			<h3>Plugins</h3>
 			<p>Plugins are small, standalone executables. They are easy to write, and can be written in any language.
 				You can find many user contributed plugins in ​the <a href="https://github.com/munin-monitoring/contrib/">contrib</a> repository
-				or <a href="http://guide.munin-monitoring.org/en/latest/plugin/index.html">easily write your own ones.</a></p>
+				or <a href="http://guide.munin-monitoring.org/en/latest/plugin/index.html">easily write your own ones</a>.</p>
 
 			<br />
 			<a href="http://guide.munin-monitoring.org/en/latest/installation/install.html#installing-munin" class="button pull-right">
@@ -115,7 +115,7 @@ permalink: /
 				{% for post in site.posts limit:6 %}
 				<li>
 					<a href="{{ post.url }}">
-						<h3>{{ post.title }}</h3>
+						<h3 class="no-anchor">{{ post.title }}</h3>
 						<p class="post-meta">Posted on {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} in {{ post.meta }}{% endif %}</p>
 					</a>
 				</li>
