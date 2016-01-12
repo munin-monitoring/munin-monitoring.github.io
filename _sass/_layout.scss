@@ -3,6 +3,25 @@ body {
 	font-family: $primary-font;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	.anchor {
+		@include opacity(0);
+		@include transition-duration(150ms);
+		display: inline-block;
+		margin-left: 5px;
+		color: inherit;
+	}
+
+	&:hover .anchor {
+		@include opacity(0.2);
+
+		&:hover {
+			@include opacity(0.7);
+			text-decoration: none;
+		}
+	}
+}
+
 $content-offset: 45px;
 
 header {
@@ -248,6 +267,10 @@ header {
 }
 
 .page-home {
+	h2 {
+		border-bottom: 0;
+	}
+
 	img {
 		margin-top: 10px;
 		@include border-radius(2px);
