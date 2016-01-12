@@ -11,6 +11,8 @@ h2, h3, h4, h5, h6 {
 		display: inline-block;
 		margin-left: 5px;
 		color: inherit;
+		width: 0;
+		overflow: visible;
 	}
 
 	&:hover .anchor {
