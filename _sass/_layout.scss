@@ -13,6 +13,7 @@ h2, h3, h4, h5, h6 {
 		color: inherit;
 		width: 0;
 		overflow: visible;
+		@include user-select(none);
 	}
 
 	&:hover .anchor {
@@ -136,12 +137,23 @@ header {
 	}
 	h3 {
 		margin-top: 20px;
+		font-size: 20px;
 	}
 	p {
 		text-align: justify;
 	}
+	blockquote {
+		font-size: 14px;
+	}
 	img {
 		max-width: 100%;
+
+		&.pull-right, &.pull-left {
+			@include border-radius(2px);
+
+			&.pull-right { margin-left: 10px; }
+			&.pull-left { margin-right: 10px; }
+		}
 	}
 	.subtitle {
 		color: #555;

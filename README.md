@@ -14,3 +14,4 @@ Here are some rules to writing pages:
 
 - Titles should go from `<h2>` to `<h6>`. The `<h1>` tag is reserved to page title and header logo.
 - Do not start your page with `# My page title`. Page titles are already displayed by the `markdown-page` template.
+- Assets (images or other related files) must be put in `/assets/{page_name}/`
