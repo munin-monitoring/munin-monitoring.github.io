@@ -117,7 +117,7 @@ my Android device so learnt Android development with my first mobile application
 whose first version was release mid-2012.
 >
 > I continued developing and maintaining it over the years without contributing to Munin, until 2015 - one year after Steve
-Schnepp reached me to talk about Munin for Android. At first, I drew a few drafts for an hypothetical new UI for munin,
+Schnepp reached to me to talk about Munin for Android. At first, I drew a few drafts for a hypothetical new UI for munin,
 but then began to work on an complete overhaul of its web interface.
 >
 > My first contribution to Munin was made early-2015, and it took about 8 months to finish the first version of Munin 3.0 UI.
