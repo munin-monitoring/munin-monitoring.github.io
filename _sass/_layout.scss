@@ -460,3 +460,36 @@ footer {
 		}
 	}
 }
+
+table {
+	border-collapse: collapse;
+	@include border-radius(2px);
+	margin: 20px 0;
+	background-color: #fff;
+	@include box-shadow(0 1px 3px 0 rgba(0, 0, 0, 0.2));
+	border: 1px solid #bbb;
+
+	thead {
+		font-size: 15px;
+		text-align: left;
+		font-weight: bold;
+		text-shadow: 1px 1px 0 #eee;
+		@include border-radius(2px 2px 0 0);
+		border: 1px solid #ccc;
+		background-color: #eee;
+		@include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.3));
+
+		th {
+			padding: 6px 10px 6px 15px;
+			white-space: nowrap;
+			font-weight: 500;
+		}
+	}
+
+	td {
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.75);
+		padding: 8px 15px;
+		border-bottom: 1px solid #d8d8d8;
+	}
+}
