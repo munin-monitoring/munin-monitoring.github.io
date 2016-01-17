@@ -14,31 +14,31 @@ and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conven
 [​slides](http://snide.free.fr/munin/dc13/).
 
 ### Distribution and Installation
-- <a class="wiki" href="/wiki/MuninInstallationLinux">Installation on various flavours of Linux</a>
-- <a class="wiki" href="/wiki/MuninInstallationDarwin">Installation on MacOS X</a>
-- <a class="wiki" href="/wiki/MuninInstallationSolaris">Installation of a munin node on Solaris</a>
-- <a class="wiki" href="/wiki/MuninConfigurationNetworkTLS">How to enable TLS in Munin</a>
-- <a class="wiki" href="/wiki/faq">FAQ</a>
+- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationLinux">Installation on various flavours of Linux</a>
+- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationDarwin">Installation on MacOS X</a>
+- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationSolaris">Installation of a munin node on Solaris</a>
+- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninConfigurationNetworkTLS">How to enable TLS in Munin</a>
+- <a class="wiki" href="http://munin-monitoring.org/wiki/faq">FAQ</a>
 
 #### Other Munin Distributions
-- [Monitor Windows](/wiki/HowToMonitorWindows)
+- [Monitor Windows](http://munin-monitoring.org/wiki/HowToMonitorWindows)
 - [Munin Drupal-Module](https://drupal.org/project/munin)
 
 ### Configuration
-- [Configuration of Munin master](/wiki/munin.conf)
-- [Configuration of Munin node](/wiki/munin-node.conf)
+- [Configuration of Munin master](http://munin-monitoring.org/wiki/munin.conf)
+- [Configuration of Munin node](http://munin-monitoring.org/wiki/munin-node.conf)
 - [​Configuration of Munin node plugins](https://munin.readthedocs.org/en/latest/plugin/use.html#configuring")
-- [munin-node-configure](/wiki/munin-node-configure) and munin-node-configure --snmp
-- [MuninConfigurationNetworkIPv6](/wiki/MuninConfigurationNetworkIPv6) support status and configuration
+- [munin-node-configure](http://munin-monitoring.org/wiki/munin-node-configure) and munin-node-configure --snmp
+- [MuninConfigurationNetworkIPv6](http://munin-monitoring.org/wiki/MuninConfigurationNetworkIPv6) support status and configuration
 
 #### Sending Alerts
-- [Sending alerts from Munin](/wiki/HowToContact) - alerts can be sent by e-mail or to other software, such as Nagios for example.
-- [Contact Nagios via NSCA](/wiki/HowToContactNagios)
+- [Sending alerts from Munin](http://munin-monitoring.org/wiki/HowToContact) - alerts can be sent by e-mail or to other software, such as Nagios for example.
+- [Contact Nagios via NSCA](http://munin-monitoring.org/wiki/HowToContactNagios)
 
 #### Templates
-- [Customizing Munin HTML pages](/wiki/Munin_additional_templates)
-- [Munin can make graphs just in time (CGI-graphing)](/wiki/MuninConfigurationMasterCGI)
-- [Notes on Munin page templates](/wiki/MuninTemplates)
+- [Customizing Munin HTML pages](http://munin-monitoring.org/wiki/Munin_additional_templates)
+- [Munin can make graphs just in time (CGI-graphing)](http://munin-monitoring.org/wiki/MuninConfigurationMasterCGI)
+- [Notes on Munin page templates](http://munin-monitoring.org/wiki/MuninTemplates)
 
 ### Plugins
 [Read on Munin Guide](http://munin-monitoring.org/wiki/plugins)
@@ -51,20 +51,20 @@ and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conven
 |        | Configuration | [munin.conf](http://munin-monitoring.org/wiki/munin.conf) |
 
 ### Other
-- [Notes on the Munin palette](/wiki/MuninPalette)
-- [Version numbers in Munin](/wiki/MuninVersioning) (based on a mailing list post)
-- [How to monitor Munin nodes on unreachable hosts](/wiki/BouncingMunin)
-- [Collected SNMP documentation index](/wiki/SNMP)
-- [Munin man page](/wiki/munin-man)
-- [Network protocol](/wiki/network-protocol)
+- [Notes on the Munin palette](http://munin-monitoring.org/wiki/MuninPalette)
+- [Version numbers in Munin](http://munin-monitoring.org/wiki/MuninVersioning) (based on a mailing list post)
+- [How to monitor Munin nodes on unreachable hosts](http://munin-monitoring.org/wiki/BouncingMunin)
+- [Collected SNMP documentation index](http://munin-monitoring.org/wiki/SNMP)
+- [Munin man page](http://munin-monitoring.org/wiki/munin-man)
+- [Network protocol](http://munin-monitoring.org/wiki/network-protocol)
 - Config files
-- [Debugging Munin](/wiki/Debugging_Munin) - a quick checklist when Munin does not seem to work.
+- [Debugging Munin](http://munin-monitoring.org/wiki/Debugging_Munin) - a quick checklist when Munin does not seem to work.
 - SNMP-plugin user guide
-    - [HOWTO Monitor Windows](/wiki/HowToMonitorWindows)
+    - [HOWTO Monitor Windows](http://munin-monitoring.org/wiki/HowToMonitorWindows)
     - *[Advanced SNMP Monitoring with RRDTool](http://www.samag.com/documents/s=9368/sam0311h/0311h.htm)* - a Sys Admin
     Magazine article about how to monitor more things with Unix' snmpd - if you don't want to install munin-node on a host.
     Not that we have SNMP plugins for this - yet ;-)
-- [HowTo run munin-node on OpenWRT](/wiki/HowToOpenWRT)
+- [HowTo run munin-node on OpenWRT](http://munin-monitoring.org/wiki/HowToOpenWRT)
 
 ## Needed Documentation
 The following items aren't documented yet:
@@ -129,7 +129,7 @@ The book covers :
 - [A japanese article about installing Munin](http://gigazine.net/index.php?/news/comments/20060904_munin/)
 - [A short diary like entry recommending Munin for monitoring](http://www.hackitlinux.com/50226711/monitoring_servers_using_munin.php)
 - [A helpful article about setting up the MySQL and Apache plugins](http://www.felinae.co.uk/blog/blog4.php/munin/)
-- [A short howto on removing spikes (metric counter wraps) from the RRD data file](/wiki/SpikeRemoval)
+- [A short howto on removing spikes (metric counter wraps) from the RRD data file](http://munin-monitoring.org/wiki/SpikeRemoval)
 - [Server Monitoring with munin And monit On Mandriva 2008.0](http://www.howtoforge.com/server-monitoring-with-munin-monit-mandriva2008.0)
 - [Munin addon for IPCop](http://www.ban-solms.de/t/IPCop-munin.html)
 - [Tuning RRD](http://oss.oetiker.ch/rrdtool-trac/wiki/TuningRRD) - tuning notes to make RRD go faster - this is for anyone that has Munin performance problems.

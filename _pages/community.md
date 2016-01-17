@@ -13,7 +13,12 @@ If you use IRC, please join #munin on the OFTC network:
 - [irc://irc6.oftc.net/#munin](irc://irc6.oftc.net/#munin)
 
 If you prefer the FreeNode network, we did setup a bidirectional relay bot that connect both #munin channels. Its name
-is "m-r-b" (as [MuninRelayBot](http://munin-monitoring.org/wiki/MuninRelayBot)).
+is "m-r-b" (as [MuninRelayBot](#muninrelaybot)):
+
+#### MuninRelayBot
+The official IRC channel in #munin on the OFTC network.
+But as many are already connected to the FreeNode network, we did setup a bidirectional relay bot that connect both #munin channels.
+Its nick is "m-r-b" (as Munin Relay Bot), and it relays with a <nick@network> prefix.
 
 #### Chat-Meetings
 Usually these will be held on Tuesday evenings (starting at 19:30 UTC). Thanks to [​MeetBot](http://wiki.debian.org/MeetBot),
