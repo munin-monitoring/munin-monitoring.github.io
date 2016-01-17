@@ -273,6 +273,57 @@ header {
 			padding-right: 0;
 		}
 	}
+
+	#markdown-toc {
+		max-width: 270px;
+		padding: 5px 10px;
+		margin: -20px -30px 10px 15px;
+		@include border-radius(2px);
+		@extend .elevation-low;
+		@extend .clear-after;
+		background-color: #fff;
+		list-style: none;
+
+		&:before {
+			content: "Table of Contents";
+			display: block;
+			margin: -5px -10px 5px -10px;
+			padding: 4px 0;
+			border-bottom: 1px solid #ddd;
+			@include border-radius(2px 2px 0 0);
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 13px;
+			font-weight: 400;
+		}
+
+		ul {
+			list-style: none;
+			padding-left: 20px;
+		}
+
+		// Reduce font-size & opacity for smaller titles
+		// (3d level opacity = 0.93^3)
+		li {
+			font-size: 0.95em;
+			@include opacity(0.93);
+		}
+
+		a {
+			display: block;
+			padding: 0.1em 0;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0 0 20px 0;
+			max-width: 100%;
+			box-shadow: none;
+			float: none!important;
+		}
+	}
 }
 
 .page-markdown {

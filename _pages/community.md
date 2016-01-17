@@ -4,6 +4,9 @@ title:  "Community"
 permalink: /community/
 ---
 
+* TOC
+{:toc .pull-right}
+
 ## Communication
 
 ### Internet Relay Chat

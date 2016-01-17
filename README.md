@@ -16,6 +16,12 @@ Here are some rules to writing pages:
 - Do not start your page with `# My page title`. Page titles are already displayed by the `markdown-page` template.
 - Assets (images or other related files) must be put in `/assets/{page_name}/`
 
+### Table of Content
+To insert a TOC at the top of a page, just use the following snippet:
+
+	* TOC
+    {:toc .pull-right}
+
 ## 301 Redirects
 To avoid a lot of 404 errors due to external links, we have to setup some 301 redirect rules. They are all set in the
 `.htaccess` file at the root of this project.

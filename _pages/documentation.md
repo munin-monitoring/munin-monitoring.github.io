@@ -4,6 +4,9 @@ title:  "Documentation"
 permalink: /documentation/
 ---
 
+* TOC
+{:toc .pull-right}
+
 Here are some important and/or interesting links to the [Munin Guide](http://guide.munin-monitoring.org/) or to external
 resources. Don't hesitate to contribute to this guide ; if you do, please read [Reference/Nomenclature](https://munin.readthedocs.org/en/latest/reference/nomenclature.html)
 and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conventions.html) first.
