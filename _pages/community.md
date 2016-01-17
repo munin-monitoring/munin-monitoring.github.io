@@ -31,7 +31,7 @@ See in the [Munin Guide](http://munin.readthedocs.org/en/latest/preface/moreinfo
 - [Stig Sandbeck Mathisen (Developer and Sysadmin)](#stig-sandbeck-mathisen-developer-and-sysadmin)
 - [Holger Levsen (Developer)](#holger-levsen-developer)
 - [Gabriele Pohl (Developer)](#gabriele-pohl-developer)
-- [Quentin Stoeckel (Developer)](#quentin-stoeckel-developer)
+- [Quentin Stoeckel (Front-End Developer)](#quentin-stoeckel-front-end-developer)
 - [Further portraits](#further-portraits)
 
 ### Steve Schnepp (Developer, Project-Admin)
@@ -109,16 +109,16 @@ and bjorn). I am still active as wiki worker here. Current task is to split up d
 from wiki to [​Munin Guide](https://munin.readthedocs.org/) and building a structure for the rest further on residing here.
 
 
-### Quentin Stoeckel (Developer)
+### Quentin Stoeckel (Front-End Developer)
 ![Quentin Stoeckel](/assets/img/community/quentin-stoeckel.jpg){: .pull-right}
 
 > I first met munin while looking for an easy-to-use monitoring solution. I quickly felt the need to browse its graphs on
 my Android device so learnt Android development with my first mobile application, [Munin for Android](https://github.com/chteuchteu/Munin-for-Android),
-whose first version was release mid-2012.
+whose first version was released mid-2012.
 >
-> I continued developing and maintaining it over the years without contributing to Munin, until 2015 - one year after Steve
+> I continued developing and maintaining it over the years without contributing to Munin, until 2014 - one year after Steve
 Schnepp reached to me to talk about Munin for Android. At first, I drew a few drafts for a hypothetical new UI for munin,
-but then began to work on an complete overhaul of its web interface.
+but then began to work on a complete overhaul of its web interface.
 >
 > My first contribution to Munin was made early-2015, and it took about 8 months to finish the first version of Munin 3.0 UI.
 
