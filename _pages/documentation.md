@@ -112,7 +112,7 @@ The book covers :
 ## Third Party Articles / Documents
 - [Installing a munin node on Solaris 10 x86 the right way](http://bulldogdata.com/installing-a-munin-node-on-solaris-10-x86-the-right-way)
 - [Linux Journal: Munin—the Raven Reports](http://www.linuxjournal.com/article/10248)
-- [How to monitor Bind with Munin](http://blog.larsstrand.org/2008/02/how-to-monitor-bind-with-munin.html)
+- [How to monitor Bind with Munin](http://blog.larsstrand.no/2008/02/how-to-monitor-bind-with-munin.html)
 - [Today's Munin tip: Splitting out a noisy graph from munin](http://ingvar.blog.linpro.no/2008/04/07/todays-munin-tip-splitting-out-a-noisy-graph-from-munin/)
 - [Today's Munin tip: Reading the future](http://ingvar.blog.linpro.no/2008/11/13/todays-munin-tip-reading-the-future/) - How to perform prediction based on Munin data
 - [Munin](http://waste.mandragor.org/munin_tutorial/munin.html) - An in-depth tutorial about Munin: basic setup, alerting, templates, virtual nodes, usage with nagios, creating your own plugins...
@@ -133,11 +133,10 @@ The book covers :
 - [Server Monitoring with munin And monit On Mandriva 2008.0](http://www.howtoforge.com/server-monitoring-with-munin-monit-mandriva2008.0)
 - [Munin addon for IPCop](http://www.ban-solms.de/t/IPCop-munin.html)
 - [Tuning RRD](http://oss.oetiker.ch/rrdtool-trac/wiki/TuningRRD) - tuning notes to make RRD go faster - this is for anyone that has Munin performance problems.
-- [Linux Magazine: Monitoring with Munin](http://www.linuxmagazine.com/id/6292)
-- [Yet another Debian / Ubuntu Install Guide](http://sysmonblog.co.uk/?p=14)
-- [Perl Template for easy plugin development](http://sysmonblog.co.uk/?p=17)
+- [Linux Magazine: Monitoring with Munin](http://www.linux-mag.com/id/6292/)
+- [Linux Magazine: Creating a custom Munin plugin](http://www.linux-magazine.com/Issues/2009/104/Building-a-Munin-Plugin)
 - [How to configure MySQL plugins in RHEL/CentOS](http://www.mbrando.com/2007/08/06/how-to-get-your-mysql-munin-graphs-working/)
-- [Improved Munin Graphs for MySQL](http://oierud.name/~kjellm/bliki/ImprovedMuninGraphsForMySQL.html)
+- [Improved Munin Graphs for MySQL](http://oierud.net/bliki/ImprovedMuninGraphsForMySQL.html)
 - [making munin-graph take advantage of multiple cpus/cores](http://blog.apokalyptik.com/2009/01/23/making-munin-graph-take-advantage-of-multiple-cpuscores/)
 - [Graphing Linux Disk I/O statistics with Munin](http://blogs.amd.co.at/robe/2008/12/graphing-linux-disk-io-statistics-with-munin.html)
 - [PyMunin - Multigraph Munin Plugins in Python](http://aouyar.github.com/PyMunin/) - Python Module for developing Munin Multigraph Monitoring Plugins. Multigraph Plugins for Apache Web Server, Apache Tomcat, APC PHP Cache, PHP FPM (Fast Process Manager), Asterisk, Lighttpd, FreeSWITCH, Memcached, MySQL Database, Nginx, NTP, PostgreSQL Database, CPU Utilization, Memory Utilization, Disk Usage, Disk I/O, Network Interfaces, Processes and Threads, etc.
