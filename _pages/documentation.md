@@ -14,11 +14,11 @@ and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conven
 [​slides](http://snide.free.fr/munin/dc13/).
 
 ### Distribution and Installation
-- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationLinux">Installation on various flavours of Linux</a>
-- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationDarwin">Installation on MacOS X</a>
-- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninInstallationSolaris">Installation of a munin node on Solaris</a>
-- <a class="wiki" href="http://munin-monitoring.org/wiki/MuninConfigurationNetworkTLS">How to enable TLS in Munin</a>
-- <a class="wiki" href="http://munin-monitoring.org/wiki/faq">FAQ</a>
+- [Installation on various flavours of Linux](http://munin-monitoring.org/wiki/MuninInstallationLinux)
+- [Installation on MacOS X](http://munin-monitoring.org/wiki/MuninInstallationDarwin)
+- [Installation of a munin node on Solaris](http://munin-monitoring.org/wiki/MuninInstallationSolaris)
+- [How to enable TLS in Munin](http://munin-monitoring.org/wiki/MuninConfigurationNetworkTLS)
+- [FAQ](http://munin-monitoring.org/wiki/faq)
 
 #### Other Munin Distributions
 - [Monitor Windows](http://munin-monitoring.org/wiki/HowToMonitorWindows)

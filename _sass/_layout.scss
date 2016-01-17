@@ -493,3 +493,18 @@ table {
 		border-bottom: 1px solid #d8d8d8;
 	}
 }
+
+// Put wiki links in red so we know we have to replace them
+a[href^="http://munin-monitoring.org/wiki/"] {
+	color: #F44336;
+
+	&:after {
+		content: "!";
+		background-color: #F44336;
+		color: #fff;
+		@include border-radius(2px);
+		padding: 0 5px;
+		font-size: 11px;
+		margin-left: 5px;
+	}
+}
