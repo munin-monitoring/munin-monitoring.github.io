@@ -4,8 +4,8 @@ title:  "Documentation"
 permalink: /documentation/
 ---
 
-Here are some important and/or interesting links to the [Munin Guide](http://guide.munin-monitoring.org/). Don't hesitate
-to contribute to this guide, but if you do, please read [Reference/Nomenclature](https://munin.readthedocs.org/en/latest/reference/nomenclature.html)
+Here are some important and/or interesting links to the [Munin Guide](http://guide.munin-monitoring.org/) or to external
+resources. Don't hesitate to contribute to this guide ; if you do, please read [Reference/Nomenclature](https://munin.readthedocs.org/en/latest/reference/nomenclature.html)
 and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conventions.html) first.
 
 ## Available documentation
@@ -140,3 +140,5 @@ The book covers :
 - [making munin-graph take advantage of multiple cpus/cores](http://blog.apokalyptik.com/2009/01/23/making-munin-graph-take-advantage-of-multiple-cpuscores/)
 - [Graphing Linux Disk I/O statistics with Munin](http://blogs.amd.co.at/robe/2008/12/graphing-linux-disk-io-statistics-with-munin.html)
 - [PyMunin - Multigraph Munin Plugins in Python](http://aouyar.github.com/PyMunin/) - Python Module for developing Munin Multigraph Monitoring Plugins. Multigraph Plugins for Apache Web Server, Apache Tomcat, APC PHP Cache, PHP FPM (Fast Process Manager), Asterisk, Lighttpd, FreeSWITCH, Memcached, MySQL Database, Nginx, NTP, PostgreSQL Database, CPU Utilization, Memory Utilization, Disk Usage, Disk I/O, Network Interfaces, Processes and Threads, etc.
+
+Wrote an article that could be listed here? [Join us on IRC](/community/#internet-relay-chat) to tell us about it!
