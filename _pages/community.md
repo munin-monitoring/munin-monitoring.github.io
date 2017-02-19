@@ -2,6 +2,10 @@
 layout: markdown-page
 title:  "Community"
 permalink: /community/
+redirect_from:
+  - /wiki/Team
+  - /wiki/Community
+  - /wiki/MuninRelayBot
 ---
 
 * TOC
@@ -106,7 +110,7 @@ about smartmontools and it's integration in Munin is still ​[online (German la
 >
 > In 2007 I got a request of Open-Source-Press to write a book about Munin. With Michael Renner was found a second author
 and we published our ​[Munin Book](http://www.opensourcepress.de/de/produkte/Munin/128/978-3-937514-48-2) in April 2008
-in Munich, Germany. Together with some other active members from the munin-users mailing list, we then spun off the 
+in Munich, Germany. Together with some other active members from the munin-users mailing list, we then spun off the
 [German speakers mailing list](https://lists.sourceforge.net/lists/listinfo/munin-users-de).
 >
 > So my focus is mainly on improving the docs and building a nice site for the community ~

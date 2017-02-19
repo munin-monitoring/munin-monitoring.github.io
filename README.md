@@ -1,6 +1,12 @@
 # munin-www
 Munin's new website is built using Jekyll. Here are some side notes for contributors/curious:
 
+## Local development environment
+To install dependencies, please read [GitHub's documentation](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#requirements).
+
+Once done, you'll be able to locally run this project using `bundle exec jekyll serve`. You can then open your favorite browser
+& navigate to http://127.0.0.1:4000.
+
 ## Pages: page.md vs pages/index.html
 For real basic pages, we use a page.md file. It allows to write its content in Markdown.
 For more complex pages - the download page for example, the content is directly written in HTML.
@@ -23,5 +29,5 @@ To insert a TOC at the top of a page, just use the following snippet:
     {:toc .pull-right}
 
 ## 301 Redirects
-To avoid a lot of 404 errors due to external links, we have to setup some 301 redirect rules. They are all set in the
-`.htaccess` file at the root of this project.
+To avoid a lot of 404 errors due to external links pointing to legacy URLs, we have to setup some 301 redirect rules.
+Since we're hosting this site on GitHub Pages, we cannot use a .htaccess file. See `redirect_from` directives in pages such as [`_pages/community.md`](/_pages/community.md).

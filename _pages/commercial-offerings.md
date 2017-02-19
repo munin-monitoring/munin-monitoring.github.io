@@ -2,6 +2,8 @@
 layout: markdown-page
 title:  "Commercial Offerings"
 permalink: /commercial-offerings/
+redirect_from:
+  - /wiki/CommercialOfferings
 ---
 
 *We are not involved in any offering unless explicitely mentionned.*
@@ -11,7 +13,7 @@ one item per section in alphabetical order with:
 
  - 1 link to their service
  - Short description of the service (30-40 words)
- 
+
 (To be added to this list, contact us on our IRC channel)
 
 ## Custom Development (Core Features & Custom Plugins)

@@ -2,6 +2,8 @@
 layout: markdown-page
 title: 	"Competitors to Munin"
 permalink: /munin-competition/
+redirect_from:
+  - /wiki/MuninCompetition
 ---
 
 On this page, we list software or packages that may serve as alternatives to Munin. This is not to gather intelligence or

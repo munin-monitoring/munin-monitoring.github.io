@@ -2,6 +2,8 @@
 layout: markdown-page
 title:  "Documentation"
 permalink: /documentation/
+redirect_from:
+  - /wiki/Documentation
 ---
 
 * TOC
@@ -83,7 +85,7 @@ The following items aren't documented yet:
 
 ### General
 ![Munin - Graphisches Netzwerk- und System-Monitoring](/assets/img/documentation/munin-graphisches-netzwerk-und-system-monitoring.jpg){: .pull-right}
-**Gabriele Pohl** and **Michael Renner** have published an entire, thoroughly written book on Munin in German: 
+**Gabriele Pohl** and **Michael Renner** have published an entire, thoroughly written book on Munin in German:
 [Munin - Graphisches Netzwerk- und System-Monitoring](http://www.amazon.de/Munin-Graphisches-System-Monitoring-Gabriele-Pohl/dp/3937514481)
 (ISBN 978-3-937514-48-2), published by [​Open Source Press](https://www.opensourcepress.de/) in cooperation with Linpro.
 
