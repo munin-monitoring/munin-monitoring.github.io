@@ -360,40 +360,32 @@ header {
 			color: #fff;
 		}
 
-		.part {
-			h3 {
-				font-family: $secondary-font;
-				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-				border-bottom: 0;
-				margin-bottom: 0;
-			}
+        .parts {
+            margin-bottom: 25px;
 
-			i {
-				float: left;
-				font-size: 30px;
-				border: 2px solid #fff;
-				@include border-radius(50%);
-				background-color: rgba(255, 255, 255, 0.1);
-				padding: 10px;
-				margin-right: 15px;
-				margin-top: 8px;
-				margin-bottom: 20px;
-				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-				@include box-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
-				@include transition-duration(150ms);
-			}
+            .part {
+                h3 {
+                    font-family: $secondary-font;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+                    border-bottom: 0;
+                    margin-bottom: 0;
+                }
 
-			a {
-				color: #d9edf7;
-				text-decoration: underline;
-			}
+                i {
+                    float: left;
+                    font-size: 30px;
+                    margin: 18px 22px 20px 10px;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+                }
 
-			&:hover i {
-				background-color: rgba(255, 255, 255, 0.15);
-			}
+                a {
+                    color: #d9edf7;
+                    text-decoration: underline;
+                }
 
-			@extend .clear-after;
-		}
+                @extend .clear-after;
+            }
+        }
 
 		.screenshot {
 			overflow: hidden;
