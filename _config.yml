@@ -1,10 +1,11 @@
 # Site settings
-title: Munin
-email: your-email@domain.com
+title: Munin Monitoring
+email: info@munin-monitoring.org
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+	Munin is a networked resource monitoring tool that can help analyze
+	resource trends and what just happened to kill our performance?
+	problems. It is designed to be very plug and play. A default
+	installation provides a lot of graphs with almost no work.
 url: "http://munin-monitoring.org"
 
 # Force include some files
