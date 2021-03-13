@@ -11,14 +11,14 @@ redirect_from:
 
 On this page we only point to some important and/or interesting external resources. 
 
-To learn about installing and using Munin -> Go to the [Munin Guide](http://guide.munin-monitoring.org/).
+To learn about installing and using Munin -> Go to the [Munin Guide](https://guide.munin-monitoring.org/).
 There we collect info and instruction about all the functionality that the current version of Munin officially supports.
 We highly appreciate contributions from Munin users to this guide ; if you do, please read [Reference/Nomenclature](https://munin.readthedocs.org/en/latest/reference/nomenclature.html)
 and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conventions.html) first.
 
 ## Lectures /Presentations
 [Steve Schnepp](/community/#steve-schnepp-developer-project-admin) held a short lecture about Munin at
-[​DebConf13](http://debconf13.debconf.org/). Discover some hints about how to scale with 2.0, and the 2.2 roadmap in the
+[​DebConf13](https://debconf13.debconf.org/). Discover some hints about how to scale with 2.0, and the 2.2 roadmap in the
 [​slides](http://snide.free.fr/munin/dc13/).
 
 ## Books
