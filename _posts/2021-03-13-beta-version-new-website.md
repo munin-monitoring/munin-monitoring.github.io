@@ -13,4 +13,4 @@ Many wiki pages are removed, since they are totally obsolete, and are replaced b
 
 The remaining things are the downloads & the gallery. Those don't have a replacement yet. 
 
-The Beta version is accessible at https://www.munin-monitoring.org/. 
+The Beta version is accessible at [https://www.munin-monitoring.org/](https://www.munin-monitoring.org/). 
