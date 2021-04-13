@@ -27,7 +27,7 @@ and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conven
 ![​Instant Munin Plugin Starter](/assets/img/documentation/instant-munin-plugin-starter.jpg){: .pull-right}
 Bart ten Brinke has written a starter book dedicated mostly to plugin writing :
 [​Instant Munin Plugin Starter](https://www.packtpub.com/networking-and-servers/instant-munin-plugin-starter-instant)
-(ISBN 9781849696746), published by ​[Packt Publishing](https://www.packtpub.com/).
+(ISBN 978-1849696746), published by ​[Packt Publishing](https://www.packtpub.com/).
 
 The book covers :
 
@@ -43,7 +43,7 @@ The book covers :
 ![Munin - Graphisches Netzwerk- und System-Monitoring](/assets/img/documentation/munin-graphisches-netzwerk-und-system-monitoring.jpg){: .pull-right}
 Gabriele Pohl and Michael Renner have published an entire, thoroughly written book on Munin in German:
 [Munin - Graphisches Netzwerk- und System-Monitoring](http://www.amazon.de/Munin-Graphisches-System-Monitoring-Gabriele-Pohl/dp/3937514481)
-(ISBN 978-3-937514-48-2), published by ​Open Source Press in cooperation with Linpro.
+(ISBN 978-3937514482), published by ​Open Source Press in cooperation with Linpro.
 
 [The ​TOC, in conjunction with Nikolai’s and Jimmy’s foreword and the books index pages](http://www.blickinsbuch.de/item/f1911b3f696f957f0612d3bd0c0930a1) are available online.
 
