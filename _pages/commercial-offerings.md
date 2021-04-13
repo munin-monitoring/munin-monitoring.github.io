@@ -32,4 +32,4 @@ means large scale deployments, which we don't have easy access to otherwise.
 
 ## Hosting and Hosted versions (Software As A Service)
 
- - [​Hosted Munin](https://hostedmunin.com/) provides Munin installs in the cloud : *You install munin-node, we do the rest.*
+ - The now-defunct [​Hosted Munin](https://web.archive.org/web/20150907203034/https://hostedmunin.com/) did provide Munin installs in the cloud.
