@@ -20,7 +20,7 @@ If you use IRC, please join #munin on the OFTC network:
 - [irc://irc6.oftc.net/#munin](irc://irc6.oftc.net/#munin)
 
 #### Chat-Meetings
-Usually these will be held on Tuesday evenings (starting at 19:30 UTC). Thanks to [​MeetBot](http://wiki.debian.org/MeetBot),
+Usually these will be held on Wednesday evenings (starting at 20:30 Europe/Paris time, following the DST). Thanks to [​MeetBot](http://wiki.debian.org/MeetBot),
 [​minutes of the meetings](http://meetbot.debian.net/munin/) are written automatically :-)
 
 ### Mailing lists
