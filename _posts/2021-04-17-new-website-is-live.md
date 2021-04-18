@@ -21,3 +21,5 @@ Updated by some github actions. The download parts is typically best handled by 
 
 Remains the demo server. This is the most tricky part, but it makes sense to have it running inside a docker image,
 as it would enable us to automatically test and verify the validity of that proposition.
+
+The old, trac based site is still available for now at [old.munin-monitoring.org](http://old.munin-monitoring.org/).
