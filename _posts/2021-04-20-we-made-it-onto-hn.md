@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "We made it on HackerNews!"
+title:  "We made it onto HackerNews!"
 categories: munin website
 ---
 
@@ -12,7 +12,7 @@ That said, usually I still take some advice from comments there are even huge ev
 
 > Even a broken clock is right 2 times per day.
 
-So, let me reply to most of the comments: 
+So, let me reply to some of the comments: 
 
 ### Page download size
 
