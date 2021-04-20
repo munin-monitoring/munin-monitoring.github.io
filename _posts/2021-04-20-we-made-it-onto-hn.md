@@ -39,4 +39,6 @@ I'll update the website itself to make it clear, as indeed having to look into a
 The current stable part of munin is the 2.0 branch, which is rather old. It went out in 2012.
 I'm (very) slowing working on the upcoming 3.0 branch, which has the focus to be much more speedy.
 
+My performance testing system for the master server is a venerable RaspberryPi 1B, and it handles correctly about 20 nodes.
+
 It is already quite stable, but doesn't support all the things that 2.0 does. Mostly the limits & alerts aren't. 
