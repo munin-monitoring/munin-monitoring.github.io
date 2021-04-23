@@ -101,10 +101,11 @@ We can resume by that plugin configuration is done when plugin cooperates and pl
 
 Here is a table with the main differences :
 
-    Plugin Configuration	Plugin Override
-    needs special plugin code	yes	no
-    configured on	node	master
-    configured in	/etc/munin/plugin-conf.d/	/etc/munin/munin-conf.d/
+   |  Plugin Configuration	| Plugin Override
+-------- | ------------------------ | -------------------
+needs special plugin code	|  yes	|  no
+configured on               | 	node	| master
+configured in	            | /etc/munin/plugin-conf.d/ | 	/etc/munin/munin-conf.d/
 
 Directly editing the plugin to change some config is really discouraged,
 better enhance the plugin for it to support plugin configuration and submit it upstream.
