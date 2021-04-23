@@ -383,14 +383,14 @@ Yes, use the `graph_width` and `graph_height` params.
 
 For an average Linux, on a munin-node:
 
-#. Download the plugin file
-#. Place it in /etc/munin/plugins
-#. Ensure it has appropriate execute permissions (e.g. chmod 755 myplugin)
-#. Optionally set plugin-specific options in /etc/munin/plugin-conf.d/munin-node
-#. Restart munin-node: /etc/init.d/munin-node restart
-#. Wait for a few minutes for the new stats start appearing in the server report
+1. Download the plugin file
+1. Place it in /etc/munin/plugins
+1. Ensure it has appropriate execute permissions (e.g. chmod 755 myplugin)
+1. Optionally set plugin-specific options in /etc/munin/plugin-conf.d/munin-node
+1. Restart munin-node: /etc/init.d/munin-node restart
+1. Wait for a few minutes for the new stats start appearing in the server report
 
-If you are installing a wildcard plugin (e.g. it looks like myplugin_ with an underscore suffix), refer to wildcard plugins.
+If you are installing a wildcard plugin (e.g. it looks like `myplugin_` with an underscore suffix), refer to wildcard plugins.
 
 ### Q: Why does a plugin work with munin-run but not in munin-node?
 
@@ -398,74 +398,90 @@ This indicates that the plugins only works when launched from a TTY.
 
 The usual suspects are then any hardening tool :
 
-SELinux
-AppArmor
-GRSecurity
-So, try to temporarily disable completely the hardening tool. If it works then you need to configure it properly for your plugin.
+* SELinux
+* AppArmor
+* GRSecurity
 
-Just after the hardening tools you might have environment var issues, such as PATH.
+So, try to temporarily disable completely the hardening tool.
+If it works then you need to configure it properly for your plugin.
 
-For that, just use the config syntax env.PATH /usr/bin:/opt/bin:...
+Just after the hardening tools you might have environment var issues, such as `PATH`.
+
+For that, just use the config syntax `env.PATH /usr/bin:/opt/bin:...`
 
 ### Q: What are the minimum requirements of a node plugin?
 
-Please see ​HowToWritePlugins for a tutorial on writing plugins.
+Please see HowToWritePlugins for a tutorial on writing plugins.
 
 ### Q: Can I make the plugin run as another user/group than nobody/nogroup?
 
-Yes, you can create a file in the plugin configuration directory (client-conf.d). The file should contain the username and group to run the plugin as. E.g., on linux, the exim_mailqueue-plugin need access to the exim mail spool (to count the messages in the queue). It needs mail group permissions to do this, so the exim_mailqueue.auth contents look like:
+Yes, you can create a file in the plugin configuration directory (client-conf.d).
+The file should contain the username and group to run the plugin as.
+E.g., on linux, the exim_mailqueue-plugin need access to the exim mail spool (to count the messages in the queue).
+It needs mail group permissions to do this, so the `exim_mailqueue.auth` contents look like:
 
-[exim_mailqueue]
-        group mail
-Similarly, you could use the user option to run the plugin as a user. If more than one group is needed, or some of the groups only exist on certain hosts (and you want a common config file), the syntax supports this:
+    [exim_mailqueue]
+            group mail
+            
+Similarly, you could use the user option to run the plugin as a user.
+If more than one group is needed, or some of the groups only exist on certain hosts (and you want a common config file), the syntax supports this:
 
-[some_plugin]
-        group mail,adm,group1,group2,(group3_that_might_not_exist)
+    [some_plugin]
+            group mail,adm,group1,group2,(group3_that_might_not_exist)
 
 ### Q: Can I run munin at different time intervals than the default?
 
-Munin runs at an interval of every five minutes (*/5) on debian systems by default. Is it possible to change this interval to an arbitrary value?
+Munin runs at an interval of every five minutes `(*/5)` on debian systems by default.
+Is it possible to change this interval to an arbitrary value?
 
-Just edit /etc/cron.d/munin.
+Just edit `/etc/cron.d/munin`.
 
-However, this won't change Munin's (or rather RRD's) granularity; all RRD files are constructed to create 5 minutes averages, and no matter how often you update the RRD files the output won't be (much) different. Changing this (default) behaviour has been proposed in Ticket #5.
+However, this won't change Munin's (or rather RRD's) granularity.
+All RRD files are constructed to create 5 minutes averages, and no matter how often you update the RRD files the output won't be (much) different.
+Changing this (default) behaviour has been proposed in Ticket #5.
 
 ### Q: How to monitor Windows XP boxes via SNMP plugins?
 
 Please see How To Monitor Windows
 
-### Q: Why do some plugins end with an underscore (_)?
+### Q: Why do some plugins end with an underscore (`_`)?
 
-Because they are so-called ​wildcard plugins, which means that the exact same plugin may be used in different contexts or with different resources. Running the plugin directly with the parameter suggest will (hopefully :-) output the possible uses for the plugin.
+Because they are so-called wildcard plugins, which means that the exact same plugin may be used in different contexts or with different resources. Running the plugin directly with the parameter suggest will (hopefully :-) output the possible uses for the plugin.
 
-A good example is the if_ plugin. The same plugin will be linked to the available interfaces on the system, e.g. if_eth0 and if_eth1.
+A good example is the `if_` plugin. The same plugin will be linked to the available interfaces on the system, e.g. `if_eth0` and `if_eth1`.
 
-$ /usr/share/munin/plugins/if_ suggest
-eth0
-eth1
-Q: Why are the graphs for plugin xyz blank?
+    $ /usr/share/munin/plugins/if_ suggest
+    eth0
+    eth1
+    
+### Q: Why are the graphs for plugin xyz blank?
 
-Hard to say. Please refer to ​debugging munin plugins for a treatment on how to find out. See also the next question:
+Hard to say. Please refer to debugging munin plugins for a treatment on how to find out.
+See also the next question:
 
 ### Q: Why are the graphs for the MySQL plugin blank?
 
-This is due to a bug in a Perl library Munin uses which causes $PATH to be lost. This again causes the plugin to not find the mysqladmin program which it needs to retrive the numbers the needed in the graphs. The solution is to hardcode the path of the program.
+This is due to a bug in a Perl library Munin uses which causes `$PATH` to be lost.
+This again causes the plugin to not find the mysqladmin program which it needs to retrive the numbers the needed in the graphs.
+The solution is to hardcode the path of the program.
 
-First locate the mysqladmin program. On most systems, the command which mysqladmin, type mysqladmin or locate mysqladmin will help you. When you find the path, enter that path in /etc/munin/plugin-conf.d/munin-node.
+First locate the mysqladmin program. On most systems, the command `which mysqladmin`, `type mysqladmin` or `locate mysqladmin` will help you.
+When you find the path, enter that path in `/etc/munin/plugin-conf.d/munin-node`.
 
 This is how it might look:
 
-darkstar:~# which mysqladmin
-/usr/bin/mysqladmin
-Then, under the [mysql*] section identifier in /etc/munin/plugin-conf.d/munin-node, add the following line:
+    darkstar:~# which mysqladmin
+    /usr/bin/mysqladmin
+    
+Then, under the `[mysql*]` section identifier in `/etc/munin/plugin-conf.d/munin-node`, add the following line:
 
-env.mysqladmin /usr/bin/mysqladmin
+    env.mysqladmin /usr/bin/mysqladmin
 
 ### Q: Why does my users plugin report floating point numbers?
 
 ...I have a plugin that counts users. Even though all the readings from it are integers, the cur value in munin is showing a floating point number.
 
-A: This is due to the fact that Munin takes a while to collect all the input numbers and therefore the collection of most numbers does not happen at the precise point in time that RRD wants. When that happens, RRD makes an interpolation between the two last data points. This leads to floating point numbers in the display.
+This is due to the fact that Munin takes a while to collect all the input numbers and therefore the collection of most numbers does not happen at the precise point in time that RRD wants. When that happens, RRD makes an interpolation between the two last data points. This leads to floating point numbers in the display.
 
 NOTE: COUNTER and DERIVE values have to be integers, but the averages calculated based on them are floating point. GAUGE values are floating point.
 
@@ -479,15 +495,15 @@ See the question above.
 
 ### Q: munin-node-configure --shell shows no plugins?
 
-Check your $PATH. If it contains any world-writable directories, including ".", then the configure won't work since -T (perl taint check) is on. Remove world-writable paths from $PATH.
+Check your `$PATH`. If it contains any world-writable directories, including ".", then the configure won't work since -T (perl taint check) is on. Remove world-writable paths from `$PATH`.
 
 ### Q: My SNMP plugin doesn't graph anything
 
-The most frequent reason for this is that munin.conf lists the SNMP unit's address instead of where the SNMP-reading plugin exists. munin.conf should include something like this:
+The most frequent reason for this is that munin.conf lists the SNMP unit's address instead of where the SNMP-reading plugin exists. `munin.conf` should include something like this:
 
-[SNMP_unit]
-  address ip.where.SNMP-plugin.exists
-  use_node_name no
+    [SNMP_unit]
+    address ip.where.SNMP-plugin.exists
+    use_node_name no
 
 ### Q: I edited my plugin to have min/max values, but they are not taken into account
 
@@ -495,51 +511,59 @@ This is a bug. Please post about your problem on the munin-users list as we have
 
 Somehow some rrd files does not get re-tuned properly when the min/max settings of the plugin are changed. You have to do it manually with :
 
-rrdtool tune ${RRD_FILE} --maximum 42:${MAXIMUM_VALUE}  --minimum 42:${MINIMUM_VALUE}
+    rrdtool tune ${RRD_FILE} --maximum 42:${MAXIMUM_VALUE}  --minimum 42:${MINIMUM_VALUE}
+    
 You can also read the next item, on having historical data corrected respectively to min/max.
 
 ### Q: I tuned the RRD to have min/max values, but they are not taken in account for historical data
 
 You have to dump/restore the data, so that RRD "normalizes" it.
 
-(rrdtool dump ${RRD_FILE} | rrdtool restore --range-check - ${RRD_FILE}.new) && \
-    mv ${RRD_FILE} ${RRD_FILE}.bak && \
-    mv ${RRD_FILE}.new ${RRD_FILE}
+    (rrdtool dump ${RRD_FILE} | rrdtool restore --range-check - ${RRD_FILE}.new) && \
+        mv ${RRD_FILE} ${RRD_FILE}.bak && \
+        mv ${RRD_FILE}.new ${RRD_FILE}
 
 ### Q. Why do SNMP not return any data?
 
-Many reasons for this, but if you are able to snmpwalk or snmpget from your SNMP enabled device, but it seems slow, the reson might be a timeout during session connection. Try to add this to munin-node.conf:
+Many reasons for this, but if you are able to snmpwalk or snmpget from your SNMP enabled device, 
+but it seems slow, the reson might be a timeout during session connection. Try to add this to munin-node.conf:
 
-[snmp_my.slow.host_plugin]
-    env.timeout 20
+    [snmp_my.slow.host_plugin]
+        env.timeout 20
+        
 Default timeout is 5 seconds, and not every SNMP plugin adheres this setting, but it might work.
 
 ## Other
 
 ### Q. How do i "su" to the munin users?
 
-The munin account will usually have no password and also no shell. Because of this, on most systems you have to use this command to su to the munin account:
+The munin account will usually have no password and also no shell.
+Because of this, on most systems you have to use this command to su to the munin account:
 
-su - munin --shell=/bin/bash
+    su - munin --shell=/bin/bash
+    
 If that alone does not work, change to the root user and then try changing to the munin user:
 
-user@box$ sudo su
-root@box# su - munin --shell=/bin/bash
-munin@box$
+    user@box$ sudo su
+    root@box# su - munin --shell=/bin/bash
+    munin@box$
 
 ### Q. The graphs are not updating any more
 
-You probably used --force-root with one of the munin programs. You really shouldn't have done that. Now fix the ownership of the .rrd files and of the .png and .html files so that the munin user can write to them again.
+You probably used `--force-root` with one of the munin programs.
+You really shouldn't have done that.
+Now fix the ownership of the .rrd files and of the .png and .html files so that the munin user can write to them again.
 
-In munin 1.2.6 and 1.3.4 there will be a "check-munin" command that checks for correct owner of some files and directories. It does not work well when graph-mode is cgi though.
+In munin 1.2.6 and 1.3.4 there will be a "check-munin" command that checks for correct owner of some files and directories.
+It does not work well when graph-mode is cgi though.
 
 You can also check your configuration, in munin.conf, if you put server's IP, replace it by 127.0.0.1. (example : instead of 88.191.XX.XX, put 127.0.0.1)
 
 Another possibility is that the structure of the generated files changed from 1.3.x to 1.4.x. Munin might be updating but the files you are looking av are no longer being updated. A quick fix is to remove all files from the munin-html directory and run munin-update again.
 
-rm -rf /var/www/munin-html/*
-su -s /bin/bash munin
-/usr/bin/munin-cron
+    rm -rf /var/www/munin-html/*
+    su -s /bin/bash munin
+    /usr/bin/munin-cron
 
 ### Q. I have installed munin on ubuntu server 12.10 …
 
@@ -549,27 +573,32 @@ I have installed munin on ubuntu server 12.10
 but the graph didn't display correctly
 
 I am using munin 2.0.2
-The usual answer is to add a correct ScriptAlias directive that is missing in the ubuntu package.
+The usual answer is to add a correct `ScriptAlias` directive that is missing in the ubuntu package.
 
-ScriptAlias /cgi-bin /usr/lib/cgi-bin
+    ScriptAlias /cgi-bin /usr/lib/cgi-bin
 
 ### Q. Is Munin the same as Nagios?
 
-No. They are used for different things and the plugins work completely different. For one Munin was designed to be plug and play. Nagios has to be configured in every detail.
+No. They are used for different things and the plugins work completely different.
+For one Munin was designed to be plug and play. Nagios has to be configured in every detail.
 
-Nagios is complimentary to Munin, and the Munin contacts/munin-limits system was originaly designed to report warning/critical conditions to Nagios.
+Nagios is complimentary to Munin, and the Munin `contacts/munin-limits` system was originaly designed to report warning/critical conditions to Nagios.
 
 ### Q. I have graphs with gaps!
 
-Reports of this has been seen now and then. When it is accompanied by emails from munin-update about lock files it is due to some node being slow at running its plugins so that munin-update does not complete in 5 minutes as it needs to. The good thing is that all modern munins (1.2 series and later) check all nodes in parallel, but if there is a node with a lot of (slow) plugins, e.g. SNMP plugins, it can sometimes take 5 minutes.
+Reports of this has been seen now and then.
+When it is accompanied by emails from munin-update about lock files it is due to some node
+being slow at running its plugins so that munin-update does not complete in 5 minutes as it needs to.
+The good thing is that all modern munins (1.2 series and later) check all nodes in parallel,
+but if there is a node with a lot of (slow) plugins, e.g. SNMP plugins, it can sometimes take 5 minutes.
 
 If there are no mails about lock files, some other issues have been identified:
 
-NTP syncronize the server
-Upgrade to a late version of munin 1.2. Apparently 1.2.3 (and earlier?) has some rarely seen timing issue not seen at all in later versions.
-You have perl Net::SSLeay modules installed but have not configured Munin to use SSL/TLS. In this case put tls disabled in your munin.conf on the server. TLS will be disabled by default, in all cases in 1.3.4 (and probably 1.2.6).
-Temporary DNS unavailability. To avoid this, either 1) run a DNS slave with a sufficiently high zone TTL on the Munin master, 2) maintain an /etc/hosts file, or 3) use only IP addresses in your munin.conf file.
-Temporary samba shares unavailability resulting in df* modules to timeout. To resolve add smbfs and cifs to df's ingnore list in df and df_inode mofules source code.
+* NTP syncronize the server
+* Upgrade to a late version of munin 1.2. Apparently 1.2.3 (and earlier?) has some rarely seen timing issue not seen at all in later versions.
+* You have perl Net::SSLeay modules installed but have not configured Munin to use SSL/TLS. In this case put tls disabled in your munin.conf on the server. TLS will be disabled by default, in all cases in 1.3.4 (and probably 1.2.6).
+* Temporary DNS unavailability. To avoid this, either 1) run a DNS slave with a sufficiently high zone TTL on the Munin master, 2) maintain an /etc/hosts file, or 3) use only IP addresses in your munin.conf file.
+* Temporary samba shares unavailability resulting in `df*` modules to timeout. To resolve add smbfs and cifs to df's ingnore list in df and df_inode mofules source code.
 
 ### Q. On one host there are no graphs at all!
 
@@ -577,27 +606,28 @@ Plesse see FAQ_no_graphs
 
 ### Q. How can I get vim to set the correct file type when editing plugins?
 
-Add the following to your ~/.vim/scripts.vim file
+Add the following to your `~/.vim/scripts.vim` file
 
-" If we already have chosen a file type, skip the rest
-if did_filetype()
-        finish
-endif
+    " If we already have chosen a file type, skip the rest
+    if did_filetype()
+            finish
+    endif
 
-" Munin plugins use @@MACRO@@ replacement, so we need to add these here
-if getline(1) =~ '^#!@@PERL@@'
-        setfiletype perl
-elseif getline(1) =~ '^#!@@GOODSH@@'
-        setfiletype sh
-elseif getline(1) =~ '^#!@@BASH@@'
-        setfiletype sh
-elseif getline(1) =~ '^#!@@PYTHON@@'
-        setfiletype python
-endif
+    " Munin plugins use @@MACRO@@ replacement, so we need to add these here
+    if getline(1) =~ '^#!@@PERL@@'
+            setfiletype perl
+    elseif getline(1) =~ '^#!@@GOODSH@@'
+            setfiletype sh
+    elseif getline(1) =~ '^#!@@BASH@@'
+            setfiletype sh
+    elseif getline(1) =~ '^#!@@PYTHON@@'
+            setfiletype python
+    endif
 
 ### Q. I'm getting 'Call to accept timed out.' in my munin-update.log
 
-If you're having a lot of munin-nodes it could be the munin-node times out during munin-update. The global default is 5 seconds, try setting a higher timeout in munin-node.conf.
+If you're having a lot of munin-nodes it could be the munin-node times out during munin-update.
+The global default is 5 seconds, try setting a higher timeout in munin-node.conf.
 
 ### Q. What does that SQL feature in munin 3.0 mean?
 
