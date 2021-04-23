@@ -6,8 +6,6 @@ redirect_from:
   - /wiki/faq
 ---
 
-# Munin FAQ
-
 ## Installation
 
 ### Q: What architectures are supported? What operating systems?
