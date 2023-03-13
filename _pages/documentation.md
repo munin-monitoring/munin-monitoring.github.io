@@ -60,7 +60,7 @@ Gabriele Pohl and Michael Renner have published an entire, thoroughly written bo
 
 ### Plugins
 
-- [PyMunin - Multigraph Munin Plugins in Python](http://aouyar.github.com/PyMunin/) - Python Module for developing Munin Multigraph Monitoring Plugins. Multigraph Plugins for Apache Web Server, Apache Tomcat, APC PHP Cache, PHP FPM (Fast Process Manager), Asterisk, Lighttpd, FreeSWITCH, Memcached, MySQL Database, Nginx, NTP, PostgreSQL Database, CPU Utilization, Memory Utilization, Disk Usage, Disk I/O, Network Interfaces, Processes and Threads, etc.
+- [PyMunin - Multigraph Munin Plugins in Python](https://aouyar.github.io/PyMunin/) - Python Module for developing Munin Multigraph Monitoring Plugins. Multigraph Plugins for Apache Web Server, Apache Tomcat, APC PHP Cache, PHP FPM (Fast Process Manager), Asterisk, Lighttpd, FreeSWITCH, Memcached, MySQL Database, Nginx, NTP, PostgreSQL Database, CPU Utilization, Memory Utilization, Disk Usage, Disk I/O, Network Interfaces, Processes and Threads, etc.
 - [Improved Munin Graphs for MySQL](http://oierud.net/bliki/ImprovedMuninGraphsForMySQL.html)
 - [Graphing Linux Disk I/O statistics with Munin](http://blogs.amd.co.at/robe/2008/12/graphing-linux-disk-io-statistics-with-munin.html)
 - [Linux Journal: Munin—the Raven Reports](http://www.linuxjournal.com/article/10248) - The cool thing about the Munin long-term monitoring suite is that it's not restricted to supervising only typical system and network parameters. In her article Patricia shows how to monitor the departures at Munich Airport with a self-written plugin.
