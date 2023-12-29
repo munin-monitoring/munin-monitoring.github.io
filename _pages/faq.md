@@ -55,7 +55,7 @@ Apply the mentioned patch to Server.pm.
 
 This problem occurs when you try to run `munin-node` as the `munin` user. Run `munin-node` as `root` instead.
 
-(Note that the munin master should run as `munin`, but `munin-nod` as `root`).
+(Note that the munin master should run as `munin`, but `munin-node` as `root`).
 
 ## Configuration
 
@@ -132,7 +132,8 @@ Like this:
     [server.example.com]
       address 10.0.0.1
       postfix_mailstats.graph_period minute
-    See graph_period? for details.
+
+See [graph_period](http://guide.munin-monitoring.org/en/latest/reference/munin.conf.html?highlight=graph_period#cmdoption-munin-conf-arg-graph-period) for details.
 
 ###  Q: Can I get a graph to show percentages instead of regular values?
 
@@ -216,7 +217,7 @@ Yes, use the domain_order option at the topmost level.
 To specify that you want the topmost level, either put the option before any host/domain definitions,
 or reset the host/domain definition with `[]`. Note that in munin 1.4.3, this is an either-or situation;
 You can't reset the host definition with `[]` unless a previous group has been declared.
-if you want to declare the domain order first in munin.conf, do not precede it with `[]`. ref: http://munin-monitoring.org/ticket/960
+if you want to declare the domain order first in munin.conf, do not precede it with `[]`.
 
     []
             domain_order foo.bar goo.bar alpha.bar
