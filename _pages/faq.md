@@ -133,7 +133,7 @@ Like this:
       address 10.0.0.1
       postfix_mailstats.graph_period minute
 
-See [graph_period](http://guide.munin-monitoring.org/en/latest/reference/munin.conf.html?highlight=graph_period#cmdoption-munin-conf-arg-graph-period) for details.
+See [graph_period](https://guide.munin-monitoring.org/en/latest/reference/munin.conf.html?highlight=graph_period#cmdoption-munin-conf-arg-graph-period) for details.
 
 ###  Q: Can I get a graph to show percentages instead of regular values?
 

@@ -8,7 +8,7 @@ powered by [Jekyll](https://jekyllrb.com).
 
 Many wiki pages are removed, since they are totally obsolete, and are replaced by 
 
-* [The Munin Guide](http://guide.munin-monitoring.org) for the documentation part of the wiki
+* [The Munin Guide](https://guide.munin-monitoring.org) for the documentation part of the wiki
 * A direct link to [our repository in GitHub](https://github.com/munin-monitoring/munin) for the source part.
 
 The remaining things are :
@@ -22,4 +22,4 @@ Updated by some github actions. The download parts is typically best handled by 
 Remains the demo server. This is the most tricky part, but it makes sense to have it running inside a docker image,
 as it would enable us to automatically test and verify the validity of that proposition.
 
-The old, trac based site is still available for now at [www.munin-monitoring.org](http://www.munin-monitoring.org/). Maybe not available yet, as it needs some time for the DNS propagation.
+The old, trac based site is still available for now at [www.munin-monitoring.org](https://www.munin-monitoring.org/). Maybe not available yet, as it needs some time for the DNS propagation.

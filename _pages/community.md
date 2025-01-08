@@ -20,11 +20,11 @@ If you use IRC, please join #munin on the OFTC network:
 - [irc://irc6.oftc.net/#munin](irc://irc6.oftc.net/#munin)
 
 #### Chat-Meetings
-Usually these will be held on Wednesday evenings (starting at 20:30 Europe/Paris time, following the DST). Thanks to [​MeetBot](http://wiki.debian.org/MeetBot),
-[​minutes of the meetings](http://meetbot.debian.net/munin/) are written automatically :-)
+Usually these will be held on Wednesday evenings (starting at 20:30 Europe/Paris time, following the DST). Thanks to [​MeetBot](https://wiki.debian.org/MeetBot),
+[​minutes of the meetings](https://meetbot.debian.net/munin/) are written automatically :-)
 
 ### Mailing lists
-See in the [Munin Guide](http://munin.readthedocs.org/en/latest/preface/moreinfo.html#mailing-lists)
+See in the [Munin Guide](https://munin.readthedocs.org/en/latest/preface/moreinfo.html#mailing-lists)
 
 ### Planet Munin
 [Planet Munin](http://planet.munin-monitoring.org/) aggregates blog posts and other munin-related information available via RSS.

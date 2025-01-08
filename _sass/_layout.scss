@@ -538,7 +538,7 @@ table {
 }
 
 // Put wiki links in red so we know we have to replace them
-a[href^="http://munin-monitoring.org/wiki/"] {
+a[href^="https://munin-monitoring.org/wiki/"] {
 	color: #F44336;
 
 	&:after {
