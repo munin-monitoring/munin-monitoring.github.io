@@ -13,8 +13,8 @@ On this page we only point to some important and/or interesting external resourc
 
 To learn about installing and using Munin -> Go to the [Munin Guide](https://guide.munin-monitoring.org/).
 There we collect info and instruction about all the functionality that the current version of Munin officially supports.
-We highly appreciate contributions from Munin users to this guide ; if you do, please read [Reference/Nomenclature](https://munin.readthedocs.org/en/latest/reference/nomenclature.html)
-and [Preface/Conventions](https://munin.readthedocs.org/en/latest/preface/conventions.html) first.
+We highly appreciate contributions from Munin users to this guide ; if you do, please read [Reference/Nomenclature](https://guide.munin-monitoring.org/en/latest/reference/nomenclature.html)
+and [Preface/Conventions](https://guide.munin-monitoring.org/en/latest/preface/conventions.html) first.
 
 ## Lectures /Presentations
 [Steve Schnepp](/community/#steve-schnepp-developer-project-admin) held a short lecture about Munin at
