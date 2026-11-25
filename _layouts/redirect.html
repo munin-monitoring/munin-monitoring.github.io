@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Redirecting&hellip;</title>
+	<link rel="canonical" href="{{ page.redirect.to }}">
+	<meta name="robots" content="noindex">
+	<script>
+		(function () {
+			var to = {{ page.redirect.to | jsonify }};
+			var anchors = {{ site.data.anchor_map[page.url] | jsonify }} || {};
+			var hash = decodeURIComponent(window.location.hash.replace(/^#/, ''));
+			var target = to;
+
+			if (hash) {
+				var mapped = anchors[hash];
+				if (mapped && /^https?:\/\//.test(mapped)) {
+					target = mapped;
+				} else if (mapped) {
+					target = to.split('#')[0] + '#' + mapped;
+				} else if (to.indexOf('#') === -1) {
+					target = to + '#' + hash;
+				}
+			}
+			window.location.replace(target);
+		})();
+	</script>
+	<noscript>
+		<meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+	</noscript>
+</head>
+<body>
+	<h1>Redirecting&hellip;</h1>
+	<p><a href="{{ page.redirect.to }}">Click here if you are not redirected.</a></p>
+</body>
+</html>
