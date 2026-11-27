@@ -1,0 +1,49 @@
+---
+layout: default
+title:  "Page not found"
+permalink: /404.html
+---
+
+<div class="page page-padding-medium page-markdown">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Page not found</h1>
+
+			<p id="not-found-legacy" hidden>
+				This address belonged to the old Munin Trac site.
+				<a id="not-found-archive" href="https://web.archive.org/">Look for it in the Internet Archive</a>.
+			</p>
+
+			<p>You may be looking for one of these:</p>
+			<ul>
+				<li><a href="https://guide.munin-monitoring.org/en/latest/">The Munin Guide</a>, the documentation</li>
+				<li><a href="/faq">The FAQ</a></li>
+				<li><a href="/download/">Downloads</a></li>
+				<li><a href="/documentation/">More documentation and articles</a></li>
+				<li><a href="https://github.com/munin-monitoring/munin/issues">Bug reports on GitHub</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script>
+	(function () {
+		const path = window.location.pathname;
+		const rest = path + window.location.search + window.location.hash;
+		const archive = 'https://web.archive.org/web/2020/http://munin-monitoring.org';
+
+		// The documentation used to be served from this site under /en/.
+		if (/^\/en\//.test(path)) {
+			window.location.replace('https://guide.munin-monitoring.org' + rest);
+			return;
+		}
+
+		// Everything that lived on the old Trac installation.
+		const legacy = /^\/(wiki|ticket|report|query|browser|log|changeset|attachment|raw-attachment|timeline|roadmap|milestone|search|chrome|about|newticket|diff|tags)(\/|$)/;
+		if (legacy.test(path)) {
+			const link = document.getElementById('not-found-archive');
+			link.href = archive + rest;
+			document.getElementById('not-found-legacy').hidden = false;
+		}
+	})();
+</script>

@@ -24,10 +24,7 @@ Usually these will be held on Wednesday evenings (starting at 20:30 Europe/Paris
 [​minutes of the meetings](https://meetbot.debian.net/munin/) are written automatically :-)
 
 ### Mailing lists
-See in the [Munin Guide](https://munin.readthedocs.org/en/latest/preface/moreinfo.html#mailing-lists)
-
-### Planet Munin
-[Planet Munin](http://planet.munin-monitoring.org/) aggregates blog posts and other munin-related information available via RSS.
+See in the [Munin Guide](https://guide.munin-monitoring.org/en/latest/preface/moreinfo.html#mailing-lists)
 
 ## Core team and supporters
 
@@ -63,7 +60,7 @@ be merged in the 1.5 version. That was in the beginning of 2010.
 
 > My first commit to the munin project was in 2007.
 >
-> Since then, development and maintenance for the ​[Munin Guide](https://munin.readthedocs.org/) and the plugin documentation
+> Since then, development and maintenance for the ​[Munin Guide](https://guide.munin-monitoring.org/) and the plugin documentation
 has become my major task. From time to time, I dig into the perl code of Munin, but not very often.
 >
 > I am also the sysadmin for the Munin project servers and take care of our Trac instance. In 2012 I migrated the project's
@@ -110,7 +107,7 @@ in Munich, Germany. Together with some other active members from the munin-users
 > Whilst studying Munin's features, configuration (and all the rest ;) for the book I read the wiki docs (and the source
 code also) and did clean up info / pages and clarify terms (in consultation with the Munin maintainers, at that time janl
 and bjorn). I am still active as wiki worker here. Current task is to split up docs in the part, that should be moved
-from wiki to [​Munin Guide](https://munin.readthedocs.org/) and building a structure for the rest further on residing here.
+from wiki to [​Munin Guide](https://guide.munin-monitoring.org/) and building a structure for the rest further on residing here.
 
 
 ### Quentin Stoeckel (Front-End Developer)
